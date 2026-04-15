@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# Build artifacts
+build/
+*.egg
+
+# Intermediate pipeline outputs (keep exports/ committed for Vercel)
+data/processed/*
+!data/processed/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+!data/interim/holidays.json
+!data/interim/baseline_val_residuals.csv
+
+# Environment
+.env
+.env.local

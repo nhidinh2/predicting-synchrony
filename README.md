@@ -6,6 +6,8 @@ contact-center metrics — **Call Volume (CV)**, **Customer Care Time (CCT)**, a
 reusable internal analytics tool: a Python package for modeling, CLI entrypoints
 for one-command runs, and a React dashboard for stakeholder review.
 
+**Live dashboard:** [predicting-cc.vercel.app](https://predicting-cc.vercel.app/)
+
 ```
 ┌──────────────┐   ┌───────────────┐   ┌────────────────┐   ┌─────────────┐
 │   ingest     │ → │   features    │ → │   models       │ → │   export    │

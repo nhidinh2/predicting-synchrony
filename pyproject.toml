@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synchrony-forecast"
+version = "0.1.0"
+description = "Multi-stage forecasting pipeline for 30-minute interval contact-center metrics."
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "xgboost>=2.0",
+    "openpyxl>=3.1",
+    "requests>=2.31",
+    "python-dateutil>=2.8",
+    "pyyaml>=6.0",
+    "click>=8.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-cov>=4.1", "ruff>=0.1"]
+
+[project.scripts]
+synchrony-run = "scripts.run_pipeline:main"
+synchrony-backtest = "scripts.run_backtest:main"
+
+[tool.setuptools.packages.find]
+include = ["pipeline*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
